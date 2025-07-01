@@ -19,8 +19,8 @@ A Homebridge plugin that monitors your WAN connection failover by detecting ISP 
 
 The plugin periodically checks your current public IP address and identifies the ISP. When your ISP changes from your configured primary ISP, it means your router has failed over to the secondary WAN connection.
 
-- Contact Sensor CLOSED = Primary WAN active (normal)
-- Contact Sensor OPEN = Secondary WAN active (failover occurred)
+- **Contact Sensor CLOSED** = Primary WAN active (normal)
+- **Contact Sensor OPEN** = Secondary WAN active (failover occurred)
 
 
 
@@ -40,9 +40,9 @@ Configure the plugin through the Homebridge UI or manually in your config.json
 Go to Homebridge UI → Plugins → homebridge-wan-monitor → Settings
 Fill in the required fields:
 
-- Accessory Name: Name for your HomeKit accessory
-- Primary ISP Name: Your primary ISP name (must match exactly)
-- Check Interval: How often to check (in minutes)
+- **Accessory Name**: Name for your HomeKit accessory
+- **Primary ISP Name**: Your primary ISP name (must match exactly)
+- **Check Interval**: How often to check (in minutes)
 
 ### Manual Configuration
 Add this to your Homebridge config.json:
@@ -80,10 +80,10 @@ Common ISP names:
 ## Automation Ideas
 Once set up, you can create HomeKit automations:
 
-- Send notification when sensor opens (secondary WAN active)
-- Turn on indicator light when failover occurs
-- Log events to a smart home hub
-- Trigger backup procedures when primary WAN fails
+- **Send notification** when sensor opens (secondary WAN active)
+- **Turn on indicator light** when failover occurs
+- **Log events** to a smart home hub
+- **Trigger backup procedures** when primary WAN fails
 
 
 
@@ -108,13 +108,13 @@ Once set up, you can create HomeKit automations:
 
 ## Support
 
-- Report issues: GitHub Issues
-- Discussions: GitHub Discussions
+- Report issues: [GitHub Issues](https://github.com/Olivierbkk/homebridge-wan-monitor/issues)
+- Discussions: [GitHub Discussions](https://github.com/Olivierbkk/homebridge-wan-monitor/discussions)
 
 
 
 ## License
-MIT License - see LICENSE file for details.
+MIT License - see [LICENSE](LICENSE) file for details.
 
 
 
