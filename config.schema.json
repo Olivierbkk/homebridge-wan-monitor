@@ -1,0 +1,60 @@
+{
+  "pluginAlias": "WANMonitor",
+  "pluginType": "accessory",
+  "singular": false,
+  "headerDisplay": "Monitor WAN failover by detecting ISP changes. The contact sensor will open when secondary WAN is active.",
+  "footerDisplay": "For help and examples, visit: [homebridge-wan-monitor](https://github.com/Olivierbkk/homebridge-wan-monitor)",
+  "schema": {
+    "type": "object",
+    "properties": {
+      "name": {
+        "title": "Accessory Name",
+        "type": "string",
+        "default": "Secondary Internet",
+        "required": true,
+        "description": "Name that will appear in HomeKit"
+      },
+      "primaryISP": {
+        "title": "Primary ISP Name",
+        "type": "string",
+        "default": "TOT Public Company Limited",
+        "required": true,
+        "description": "Name of your primary ISP (must match the ISP name returned by ipinfo.io)",
+        "placeholder": "e.g., Comcast Cable, Verizon, AT&T"
+      },
+      "checkInterval": {
+        "title": "Check Interval (minutes)",
+        "type": "integer", 
+        "default": 30,
+        "minimum": 1,
+        "maximum": 1440,
+        "required": true,
+        "description": "How often to check ISP status (in minutes)"
+      },
+      "verbose": {
+        "title": "Verbose Logging",
+        "type": "boolean",
+        "default": false,
+        "description": "Enable detailed logging for troubleshooting"
+      }
+    }
+  },
+  "form": [
+    "name",
+    {
+      "key": "primaryISP",
+      "type": "string",
+      "placeholder": "Enter your primary ISP name exactly as it appears"
+    },
+    {
+      "key": "checkInterval",
+      "type": "number",
+      "description": "Recommended: 10-30 minutes to avoid rate limiting"
+    },
+    {
+      "key": "verbose",
+      "type": "checkbox",
+      "description": "Check this for more detailed logs"
+    }
+  ]
+}

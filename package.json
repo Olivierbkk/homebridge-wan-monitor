@@ -1,0 +1,40 @@
+{
+  "name": "homebridge-wan-monitor",
+  "version": "1.0.0",
+  "description": "Homebridge plugin to monitor WAN failover by detecting ISP changes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Olivierbkk/homebridge-wan-monitor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Olivierbkk/homebridge-wan-monitor/issues"
+  },
+  "homepage": "https://github.com/Olivierbkk/homebridge-wan-monitor#readme",
+  "keywords": [
+    "homebridge-plugin",
+    "wan-monitor", 
+    "failover",
+    "network-monitoring",
+    "homekit",
+    "dual-wan",
+    "internet-monitoring"
+  ],
+  "engines": {
+    "node": ">=18.20.4 || >=20.15.1 || >=22",
+    "homebridge": ">=1.6.0 || >=2.0.0-beta.0"
+  },
+  "author": {
+    "name": "Olivierbkk"
+  },
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "config.schema.json",
+    "README.md",
+    "LICENSE"
+  ]
+}
