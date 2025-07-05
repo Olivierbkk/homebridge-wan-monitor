@@ -119,7 +119,7 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 
 ## Changelog
-### 1.0.0
+### 1.0.2
 
 - Initial release
 - Basic WAN monitoring functionality
